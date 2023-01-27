@@ -294,6 +294,18 @@ elif dog == "cuddly":
     owner = "Snuggling."
 else:
     owner = "Reading newspaper."
+
+match dog:
+  case "hungry":
+    owner = "Refilling food bowl."
+  case "thirsty":
+    owner = "Refillin water bowl."
+  case "playful":
+    owner = "Playing tug-of-war."
+  case "cuddly":
+    owner = "Snuggling."
+  case _:
+    owner = "Reading newspaper."
 ```
 
 As you can see, there is some repeated code in `dog ==`, but the code is still
